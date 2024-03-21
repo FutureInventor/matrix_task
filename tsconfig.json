@@ -1,0 +1,24 @@
+{
+    "compilerOptions": {
+      "baseUrl": ".",
+      "target": "ES2020",
+      "lib": ["ESNext"],
+      "module": "ESNext",
+  
+      /* Bundler mode */
+      "moduleResolution": "Node",
+      "allowImportingTsExtensions": true,
+      "esModuleInterop": true,
+      "noEmit": true,
+  
+      /* Linting */
+      "strict": true,
+      "noUnusedLocals": true,
+      "noUnusedParameters": false,
+      "forceConsistentCasingInFileNames": true,
+    },
+    "include": ["."],
+    "ts-node": {
+      "experimentalSpecifierResolution": "node"
+    }
+  }

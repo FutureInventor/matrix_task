@@ -1,0 +1,24 @@
+{
+  "name": "matrix_task",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "type": "module",
+  "scripts": {
+    "start": "npx ts-node --esm --files ./index.ts",
+    "test": "jest"
+  },
+  "keywords": ["matrix", "zero", "tranform"],
+  "author": "Karolina Hudziec",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^29.5.12",
+    "ts-jest": "^29.1.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.3"
+  },
+  "jest": {
+    "preset": "ts-jest",
+    "testEnvironment": "node"
+  }
+}
