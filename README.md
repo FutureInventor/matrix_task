@@ -1,40 +1,65 @@
+
 # Matrix Task
 
-## Description
+## Description 📝
 
-This project aims to provide functionality for manipulating matrices.
+Manipulating matrix: changing rows and columns containing zero elements.
 
-## Installation
 
-To use this project, you'll need to have Node.js and npm (Node Package Manager) installed on your system.
 
-1. Clone this repository to your local machine: 
 
-2. Navigate to the project directory:
+## Installation 💿
 
-3. Install dependencies:
+Clone the project:
 
-## Usage
+```bash
+  git clone https://github.com/FutureInventor/matrix_task
+```
 
-### Running the Application
+Go to the project directory:
+
+```bash
+  cd matrix_task
+```
+
+Install dependencies:
+
+```bash
+  npm install
+```
+
+
+## Running the Application 🚀
 
 To run the application, use the following command:
 
-npm start <array>*
+```bash
+  npm start <array>*
+```
 
 This will execute the `index.ts` file using `ts-node`.
 
-* Important: array should not have any whitespaces, therefore:
- [[ 1, 2, 3], [ 0, 5, 6],[ 7, 8, 9]] // bad
- [[1,2,3],[0,5,6],[7,8,9]] // good
+IMPORTANT: An array should not have any whitespaces.
 
-Example usage: npm start [[1,2,3],[0,5,6],[7,8,9]]
+*[[ 1, 2, 3], [ 0, 5, 6],[ 7, 8, 9]]* ❌
 
-### Testing
+*[[1,2,3],[0,5,6],[7,8,9]]* ✅
 
-To run tests, use the following command:
+Example usage:
 
-npm test
+```bash
+  npm start [[1,2,3],[0,5,6],[7,8,9]]
+```
+
+
+
+## Running Tests 🧪
+
+To run tests, run the following command:
+
+```bash
+  npm run test
+```
 
 This will execute the Jest test suite.
 
