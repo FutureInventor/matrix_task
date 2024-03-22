@@ -39,7 +39,7 @@ To run the application, use the following command:
 
 This will execute the `index.ts` file using `ts-node`.
 
-**IMPORTANT:** An array should not have any whitespaces.
+***IMPORTANT:** An array should not have any whitespaces.
 
 *[[ 1, 2, 3], [ 0, 5, 6],[ 7, 8, 9]]* ❌
 
