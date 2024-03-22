@@ -34,12 +34,12 @@ Install dependencies:
 To run the application, use the following command:
 
 ```bash
-  npm start <array>*
+  npm start <matrix>*
 ```
 
 This will execute the `index.ts` file using `ts-node`.
 
-***IMPORTANT:** An array should not have any whitespaces.
+***IMPORTANT:** A matrix should not have any whitespaces.
 
 *[[ 1, 2, 3], [ 0, 5, 6],[ 7, 8, 9]]* ❌
 
