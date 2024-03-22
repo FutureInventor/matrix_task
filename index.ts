@@ -13,6 +13,8 @@ export const matrixZero = (matrix: Matrix): Matrix => {
     const zero_columns = new Set<number>()
 
     matrix.forEach((row, r_index) => {
+        if (row_length !== row.length)
+            throw new Error("Every row should have the same length.")
         row.forEach((column, c_index) => {
             if (column === 0) {
                 zero_rows.add(r_index)
@@ -33,15 +35,14 @@ export const matrixZero = (matrix: Matrix): Matrix => {
 
 (function() {
     try {
+        if (!process.argv[2])
+            throw new Error("You didn't provide any matrix. Try with: [[1,2,3],[0,5,6],[7,8,9]]")
         const inputMatrix = JSON.parse(process.argv[2])
-        if (!inputMatrix.length) {
-            throw new Error("Matrix is empty. Try with: [[1,2,3],[0,5,6],[7,8,9]]");
-        } else {
-            console.log("Original matrix:")
-            console.table(inputMatrix)
-            console.log("Modified matrix:")
-            console.table(matrixZero(inputMatrix))
-        }
+        const outputMatrix = matrixZero(inputMatrix)
+        console.log("Original matrix:")
+        console.table(inputMatrix)
+        console.log("Modified matrix:")
+        console.table(outputMatrix)
     }
     catch (error) {
         console.error(error)
